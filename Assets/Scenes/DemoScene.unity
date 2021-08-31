@@ -744,7 +744,7 @@ MonoBehaviour:
   ShowCenter: 0
   Player: {fileID: 89324807}
   RelativePosition: {x: -10, y: 27, z: -10}
-  FollowTime: 2
+  FollowTime: 0.07
 --- !u!1 &1102824269
 GameObject:
   m_ObjectHideFlags: 0
