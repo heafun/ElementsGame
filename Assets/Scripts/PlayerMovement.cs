@@ -6,9 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
 
     [SerializeField]
-    private float movespeed;
-    [SerializeField]
-    private float maxspeed;
+    private float movespeed, maxspeed;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Rigidbody rigidbody = GetComponent<Rigidbody>();
         movement.Scale(new Vector3(movespeed, movespeed, movespeed));
-        Debug.Log("Speed:" + rigidbody.velocity.magnitude);
+        //Debug.Log("Speed:" + rigidbody.velocity.magnitude);
         if (rigidbody.velocity.magnitude <= maxspeed)
         {
             rigidbody.AddForce(movement);
