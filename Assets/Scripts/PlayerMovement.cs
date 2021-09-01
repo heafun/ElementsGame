@@ -36,11 +36,12 @@ public class PlayerMovement : MonoBehaviour
             rigidbody.AddForce(Vector3.Lerp(Vector3.zero, currentMovement, ratio));
         }
 
-        if (Vector3.zero != rigidbody.velocity)
-        {
             Vector3 lookDirection = rigidbody.velocity.normalized;
 
             lookDirection.y = 0f;
+
+        if (Vector3.zero != lookDirection)
+        {
 
             Debug.Log(lookDirection);
 
